@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — Homeschool Survival Plan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --amber:   #f59e0b;
+      --amber-d: #d97706;
+      --green:   #059669;
+      --pink:    #ec4899;
+      --cream:   #fffbf0;
+      --text-1:  #1c1007;
+      --text-2:  #5c4a2a;
+      --text-3:  #9c8060;
+      --border:  rgba(245,158,11,.18);
+    }
+
+    html, body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--cream);
+      color: var(--text-1);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 10% 0%,  rgba(245,158,11,.10) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 90% 100%, rgba(5,150,105,.08)  0%, transparent 60%),
+        var(--cream);
+      z-index: -1;
+    }
+
+    .wrap { max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--amber-d);
+      text-decoration: none;
+      margin-bottom: 2rem;
+    }
+    .back-link:hover { text-decoration: underline; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(245,158,11,.1);
+      border: 1.5px solid rgba(245,158,11,.3);
+      border-radius: 99px;
+      padding: 0.28rem 0.85rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--amber-d);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: "Fraunces", serif;
+      font-weight: 900;
+      font-size: clamp(1.7rem, 5vw, 2.3rem);
+      line-height: 1.15;
+      color: var(--text-1);
+      margin-bottom: 0.4rem;
+    }
+
+    .updated { font-size: 0.8rem; color: var(--text-3); margin-bottom: 1.5rem; }
+
+    .intro {
+      background: rgba(255,255,255,.7);
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 1.1rem 1.3rem;
+      font-size: 0.9rem;
+      color: var(--text-2);
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+    .intro a { color: var(--amber-d); font-weight: 700; text-decoration: none; }
+    .intro a:hover { text-decoration: underline; }
+
+    .coppa-callout {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      background: rgba(236,72,153,.08);
+      border: 1.5px solid rgba(236,72,153,.25);
+      border-radius: 16px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .coppa-callout-icon { font-size: 1.3rem; flex-shrink: 0; }
+    .coppa-callout p { font-size: 0.86rem; color: var(--text-2); line-height: 1.6; margin: 0; }
+    .coppa-callout a { color: #9d174d; font-weight: 700; text-decoration: none; }
+    .coppa-callout a:hover { text-decoration: underline; }
+
+    .toc {
+      background: rgba(255,255,255,.6);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .toc-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 0.6rem;
+    }
+    .toc ol { margin-left: 1.1rem; }
+    .toc li { font-size: 0.84rem; margin-bottom: 0.3rem; }
+    .toc a { color: var(--text-2); text-decoration: none; }
+    .toc a:hover { color: var(--amber-d); text-decoration: underline; }
+
+    h2 {
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text-1);
+      margin: 2.2rem 0 0.6rem;
+      padding-top: 0.6rem;
+      border-top: 1px solid var(--border);
+      scroll-margin-top: 1rem;
+    }
+    h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+
+    h3 {
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: var(--text-1);
+      margin: 1.2rem 0 0.5rem;
+    }
+
+    p { font-size: 0.88rem; color: var(--text-2); line-height: 1.7; margin-bottom: 0.85rem; }
+    .in-short { font-style: italic; color: var(--text-2); }
+
+    ul { margin: 0 0 0.9rem 1.3rem; }
+    li { font-size: 0.88rem; color: var(--text-2); line-height: 1.65; margin-bottom: 0.4rem; }
+
+    strong { color: var(--text-1); font-weight: 700; }
+    a.inline { color: var(--amber-d); font-weight: 600; text-decoration: none; }
+    a.inline:hover { text-decoration: underline; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0 1.25rem;
+      font-size: 0.8rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.6rem;
+      text-align: left;
+      color: var(--text-2);
+    }
+    th { background: rgba(245,158,11,.08); color: var(--text-1); font-weight: 700; }
+    td.center { text-align: center; }
+    .yes { color: #065f46; font-weight: 700; }
+    .no { color: var(--text-3); }
+
+    .contact-box {
+      background: rgba(255,255,255,.7);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem 1.3rem;
+      font-size: 0.88rem;
+      color: var(--text-2);
+      line-height: 1.7;
+      margin: 1rem 0;
+    }
+    .contact-box strong { display: block; margin-bottom: 0.2rem; }
+
+    .footer-note {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.78rem;
+      color: var(--text-3);
+      text-align: center;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back-link" href="index.html">&larr; Back to Homeschool Survival Plan</a>
+
+  <span class="badge">Legal</span>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated June 26, 2026</p>
+
+  <div class="intro">
+    This Privacy Notice for Homeschool Survival Plan (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) describes how and why we might access, collect, store, use, and/or share (&ldquo;process&rdquo;) your personal information when you use our services (&ldquo;Services&rdquo;), including when you visit <a href="https://homeschoolsurvivalplan.com">homeschoolsurvivalplan.com</a> or engage with us in other related ways. Questions or concerns? Contact us at <a href="mailto:hello@homeschoolsurvivalplan.com">hello@homeschoolsurvivalplan.com</a>.
+  </div>
+
+  <div class="coppa-callout">
+    <span class="coppa-callout-icon">&#128118;</span>
+    <p><strong>Using Homeschool Survival Plan with your kids?</strong> See our dedicated <a href="childrens-privacy.html">Children&rsquo;s Privacy Supplement</a> for details on how we handle student information and your rights as a parent or guardian.</p>
+  </div>
+
+  <div class="toc">
+    <div class="toc-title">Table of Contents</div>
+    <ol>
+      <li><a href="#collect">What Information Do We Collect?</a></li>
+      <li><a href="#process">How Do We Process Your Information?</a></li>
+      <li><a href="#share">When and With Whom Do We Share Your Information?</a></li>
+      <li><a href="#retain">How Long Do We Keep Your Information?</a></li>
+      <li><a href="#safe">How Do We Keep Your Information Safe?</a></li>
+      <li><a href="#rights">What Are Your Privacy Rights?</a></li>
+      <li><a href="#dnt">Controls for Do-Not-Track Features</a></li>
+      <li><a href="#uslaws">Do US Residents Have Specific Privacy Rights?</a></li>
+      <li><a href="#updates">Do We Make Updates to This Notice?</a></li>
+      <li><a href="#contact">How Can You Contact Us?</a></li>
+      <li><a href="#review">How Can You Review, Update, or Delete Your Data?</a></li>
+    </ol>
+  </div>
+
+  <h2 id="collect">1. What Information Do We Collect?</h2>
+  <h3>Personal information you disclose to us</h3>
+  <p class="in-short">In Short: We collect personal information that you provide to us.</p>
+  <p>We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, participate in activities on the Services, or otherwise contact us.</p>
+  <p><strong>Sensitive Information.</strong> When necessary, with your consent or as otherwise permitted by applicable law, we process the following categories of sensitive information:</p>
+  <p><strong>Payment Data.</strong> We may collect data necessary to process your payment if you choose to make purchases, such as your payment instrument number and security code. All payment data is handled and stored by <strong>Stripe</strong>. You may find their privacy notice at <a class="inline" href="https://stripe.com/privacy" target="_blank">stripe.com/privacy</a>.</p>
+  <p>All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.</p>
+
+  <h2 id="process">2. How Do We Process Your Information?</h2>
+  <p class="in-short">In Short: We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law.</p>
+  <p>We process your personal information for a variety of reasons, including:</p>
+  <ul>
+    <li><strong>To facilitate account creation and authentication</strong> and otherwise manage user accounts.</li>
+    <li><strong>To deliver and facilitate delivery of services</strong> to the user.</li>
+    <li><strong>To respond to user inquiries</strong> and offer support to users.</li>
+    <li><strong>To send administrative information</strong> about our products and services, changes to our terms and policies, and similar information.</li>
+    <li><strong>To request feedback</strong> and contact you about your use of our Services.</li>
+    <li><strong>To evaluate and improve</strong> our Services, products, marketing, and your experience.</li>
+    <li><strong>To identify usage trends</strong> and better understand how our Services are used.</li>
+    <li><strong>To comply with our legal obligations</strong>, respond to legal requests, and exercise, establish, or defend our legal rights.</li>
+  </ul>
+
+  <h2 id="share">3. When and With Whom Do We Share Your Personal Information?</h2>
+  <p class="in-short">In Short: We may share information in specific situations described in this section and with specific third parties.</p>
+  <ul>
+    <li><strong>Business Transfers.</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business.</li>
+    <li><strong>Business Partners.</strong> We may share your information with our business partners (such as Stripe, Mailchimp, Supabase, and Netlify) to operate, support, and improve the Services.</li>
+  </ul>
+
+  <h2 id="retain">4. How Long Do We Keep Your Information?</h2>
+  <p class="in-short">In Short: We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.</p>
+  <p>We will only keep your personal information for as long as necessary for the purposes set out in this Privacy Notice, unless a longer retention period is required by law. No purpose in this notice will require us to keep your personal information for longer than the period in which you have an account with us.</p>
+  <p>When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it, or, if this is not possible, securely store it and isolate it from further processing until deletion is possible.</p>
+
+  <h2 id="safe">5. How Do We Keep Your Information Safe?</h2>
+  <p class="in-short">In Short: We aim to protect your personal information through a system of organizational and technical security measures.</p>
+  <p>We have implemented appropriate and reasonable technical and organizational security measures designed to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure. Transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.</p>
+
+  <h2 id="rights">6. What Are Your Privacy Rights?</h2>
+  <p class="in-short">In Short: You may review, change, or terminate your account at any time, depending on your country, province, or state of residence.</p>
+  <p><strong>Withdrawing your consent:</strong> If we rely on your consent to process your personal information, you have the right to withdraw it at any time by contacting us using the details in the <a class="inline" href="#contact">Contact</a> section below.</p>
+  <p><strong>Opting out of marketing communications:</strong> You can unsubscribe at any time by clicking the unsubscribe link in our emails, emailing <a class="inline" href="mailto:hello@homeschoolsurvivalplan.com">hello@homeschoolsurvivalplan.com</a>, or contacting us using the details below. We may still send service-related messages necessary for the administration of your account.</p>
+  <h3>Account Information</h3>
+  <p>If you would like to review, change, or terminate your account at any time, contact us directly at <a class="inline" href="mailto:hello@homeschoolsurvivalplan.com">hello@homeschoolsurvivalplan.com</a>. Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases, though we may retain some information as required to prevent fraud, troubleshoot problems, assist with investigations, or comply with legal requirements.</p>
+
+  <h2 id="dnt">7. Controls for Do-Not-Track Features</h2>
+  <p>Most web browsers include a Do-Not-Track (&ldquo;DNT&rdquo;) feature. Because no uniform technology standard for recognizing DNT signals has been finalized, we do not currently respond to DNT browser signals. California law requires us to disclose this, and we comply by providing this notice.</p>
+
+  <h2 id="uslaws">8. Do United States Residents Have Specific Privacy Rights?</h2>
+  <p class="in-short">In Short: If you are a resident of California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, or Virginia, you may have rights regarding your personal information.</p>
+
+  <h3>Categories of Personal Information We Collect</h3>
+  <table>
+    <thead><tr><th>Category</th><th>Examples</th><th>Collected</th></tr></thead>
+    <tbody>
+      <tr><td>A. Identifiers</td><td>Name, address, phone, email, online identifiers</td><td class="center yes">YES</td></tr>
+      <tr><td>B. CA Customer Records</td><td>Name, contact info, education, employment</td><td class="center yes">YES</td></tr>
+      <tr><td>C. Protected classifications</td><td>Age, date of birth, demographic data</td><td class="center yes">YES</td></tr>
+      <tr><td>D. Commercial information</td><td>Transaction & purchase history</td><td class="center no">NO</td></tr>
+      <tr><td>E. Biometric information</td><td>Fingerprints, voiceprints</td><td class="center no">NO</td></tr>
+      <tr><td>F. Internet/network activity</td><td>Browsing history, online behavior</td><td class="center no">NO</td></tr>
+      <tr><td>G. Geolocation data</td><td>Device location</td><td class="center no">NO</td></tr>
+      <tr><td>H. Audio/visual information</td><td>Images, audio, video recordings</td><td class="center no">NO</td></tr>
+      <tr><td>I. Professional/employment info</td><td>Job title, work history</td><td class="center no">NO</td></tr>
+      <tr><td>J. Education Information</td><td>Student records, directory information</td><td class="center yes">YES</td></tr>
+      <tr><td>K. Inferences</td><td>Profiles or summaries from collected data</td><td class="center no">NO</td></tr>
+      <tr><td>L. Sensitive personal information</td><td>Account login info, personal data from a known child</td><td class="center yes">YES</td></tr>
+    </tbody>
+  </table>
+  <p>We retain Categories A, B, C, J, and L for as long as the user has an account with us.</p>
+
+  <h3>Will Your Information Be Shared With Anyone Else?</h3>
+  <p>We may disclose your personal information to our service providers pursuant to a written contract with each provider. We have not disclosed, sold, or shared any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months, and we will not sell or share personal information in the future.</p>
+
+  <h3>Your Rights</h3>
+  <ul>
+    <li><strong>Right to know</strong> whether we are processing your personal data</li>
+    <li><strong>Right to access</strong> your personal data</li>
+    <li><strong>Right to correct</strong> inaccuracies in your personal data</li>
+    <li><strong>Right to request deletion</strong> of your personal data</li>
+    <li><strong>Right to obtain a copy</strong> of the personal data you previously shared with us</li>
+    <li><strong>Right to non-discrimination</strong> for exercising your rights</li>
+    <li><strong>Right to opt out</strong> of targeted advertising, sale of personal data, or certain profiling</li>
+  </ul>
+
+  <h3>How to Exercise Your Rights</h3>
+  <p>To exercise these rights, contact us by emailing <a class="inline" href="mailto:hello@homeschoolsurvivalplan.com">hello@homeschoolsurvivalplan.com</a>.</p>
+
+  <h3>Appeals</h3>
+  <p>If we decline to take action on your request, you may appeal by emailing <a class="inline" href="mailto:hello@homeschoolsurvivalplan.com">hello@homeschoolsurvivalplan.com</a>. If your appeal is denied, you may submit a complaint to your state attorney general.</p>
+
+  <h3>California &ldquo;Shine the Light&rdquo; Law</h3>
+  <p>California Civil Code Section 1798.83 permits California residents to request, once a year and free of charge, information about categories of personal information we disclosed to third parties for direct marketing purposes. Submit such requests using the contact details below.</p>
+
+  <h2 id="updates">9. Do We Make Updates to This Notice?</h2>
+  <p class="in-short">In Short: Yes, we will update this notice as necessary to stay compliant with relevant laws.</p>
+  <p>We may update this Privacy Notice from time to time. The updated version will be indicated by an updated &ldquo;Revised&rdquo; date at the top. If we make material changes, we will notify you by prominently posting a notice or sending a direct notification.</p>
+
+  <h2 id="contact">10. How Can You Contact Us About This Notice?</h2>
+  <p>If you have questions or comments about this notice, you may contact our Data Protection Officer by email or post:</p>
+  <div class="contact-box">
+    <strong>Homeschool Survival Plan</strong>
+    Data Protection Officer<br/>
+    Email: <a class="inline" href="mailto:hello@homeschoolsurvivalplan.com">hello@homeschoolsurvivalplan.com</a><br/>
+    Indiana, United States
+  </div>
+
+  <h2 id="review">11. How Can You Review, Update, or Delete the Data We Collect From You?</h2>
+  <p>Based on the applicable laws of your state of residence, you may have the right to request access to the personal information we collect from you, correct inaccuracies, or delete your personal information. To make such a request, please email <a class="inline" href="mailto:hello@homeschoolsurvivalplan.com">hello@homeschoolsurvivalplan.com</a>.</p>
+
+  <p class="footer-note">
+    This Privacy Policy was created using Termly&rsquo;s Privacy Policy Generator, with custom additions for Homeschool Survival Plan.<br/><br/>
+    &copy; 2026 Homeschool Survival Plan<br/>
+    homeschoolsurvivalplan.com
+  </p>
+
+</div>
+</body>
+</html>
